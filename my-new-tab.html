@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'"
+    />
+    <script src="./marked.js"></script>
+    <script src="./vue.js"></script>
+  </head>
+  <body>
+    <div id="editor">
+      <textarea :value="input" @input="update"></textarea>
+      <div v-html="compiledMarkdown"></div>
+    </div>
+    <script src="./papillon.js"></script>
+  </body>
+</html>

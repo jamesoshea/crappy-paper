@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "Papillon",
+  "version": "0.1",
+  "description": "Adds a red border to all webpages matching mozilla.org.",
+  "icons": {
+    "48": "icons/papillon-48.png"
+  },
+  "chrome_url_overrides": {
+    "newtab": "my-new-tab.html"
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
